@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Styled HTML Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My First HTML Page</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Ordered List with Roman Numerals</h2>
+            <ol type="I" class="roman-list">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <li>Fourth item</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Beautiful Image from Pexels</h2>
+            <img id="pexels-image" 
+                 src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg" 
+                 alt="Scenic landscape with mountains and lake" 
+                 width="400">
+        </section>
+
+        <section>
+            <h2>Contact List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123 Main St</td>
+                        <td>555-1234</td>
+                        <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>456 Oak Ave</td>
+                        <td>555-5678</td>
+                        <td>jane@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Johnson</td>
+                        <td>789 Pine Rd</td>
+                        <td>555-9012</td>
+                        <td>bob@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alice Brown</td>
+                        <td>321 Elm St</td>
+                        <td>555-3456</td>
+                        <td>alice@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie Davis</td>
+                        <td>654 Maple Dr</td>
+                        <td>555-7890</td>
+                        <td>charlie@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Registration Form</h2>
+            <form id="registration-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" 
+                           placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" 
+                           placeholder="your.email@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" 
+                           placeholder="Create a password" required minlength="8">
+                </div>
+                
+                <div class="form-group">
+                    <label for="birthdate">Birth Date:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select a country</option>
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="au">Australia</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Gender:</legend>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </fieldset>
+                </div>
+                
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Interests:</legend>
+                        <input type="checkbox" id="sports" name="interests" value="sports">
+                        <label for="sports">Sports</label>
+                        
+                        <input type="checkbox" id="music" name="interests" value="music">
+                        <label for="music">Music</label>
+                        
+                        <input type="checkbox" id="reading" name="interests" value="reading">
+                        <label for="reading">Reading</label>
+                    </fieldset>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My First HTML Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
